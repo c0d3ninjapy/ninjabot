@@ -1,6 +1,8 @@
 import socket, sys, string 
  
-# Python IRC Bot by c0deNinja aka s0urd (ninjabot v1.0)
+# Python IRC Bot by c0deNinja aka s0urd(old nickname) (ninjabot v1.0)
+# Discord: http://discord.gg/JV6pu5q
+# I first coded this bot in Python2 a long time ago, then convert it to work with Python3
 # Python 3
 
 if len(sys.argv) !=3:
@@ -38,7 +40,7 @@ while True:
 			print (data)
 	elif data.find(b'PRIVMSG') != -1:
 		message = b':'.join(data.split(b':')[2:])
-		if message.lower().find(b'An0nr00t') == -1: 
+		if message.lower().find(b'gotr00t') == -1: 
 			nick = data.split(b'!')[ 0 ].replace(b':',b' ')
 			destination = b''.join (data.split(b':')[:2]).split (b' ')[-2]
 			function = message.split( )[0]
