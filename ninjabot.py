@@ -3,7 +3,6 @@ import socket, sys, string
 # Python IRC Bot by c0deNinja aka s0urd(old nickname) (ninjabot v1.0)
 # Discord: http://discord.gg/JV6pu5q
 # I first coded this bot in Python2 a long time ago, then convert it to work with Python3
-# Python 3
 
 if len(sys.argv) !=3:
 	print ("Usage python ninjabot.py <server> <port> <channel>")
